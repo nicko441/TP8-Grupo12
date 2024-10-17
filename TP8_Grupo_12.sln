@@ -4,12 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vistas", "Vistas\Vistas.csproj", "{2093C4CF-FE70-483E-B65F-3B11BB7F752E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67A63266-1BEA-4A0C-9BE3-ED3034EFC575} = {67A63266-1BEA-4A0C-9BE3-ED3034EFC575}
+		{DB6526CC-D405-42DD-9A67-57C07DC01BFC} = {DB6526CC-D405-42DD-9A67-57C07DC01BFC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dao", "Dao\Dao.csproj", "{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB6526CC-D405-42DD-9A67-57C07DC01BFC} = {DB6526CC-D405-42DD-9A67-57C07DC01BFC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{DB6526CC-D405-42DD-9A67-57C07DC01BFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{67A63266-1BEA-4A0C-9BE3-ED3034EFC575}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726} = {8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}
+		{DB6526CC-D405-42DD-9A67-57C07DC01BFC} = {DB6526CC-D405-42DD-9A67-57C07DC01BFC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

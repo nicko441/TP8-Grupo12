@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucursal.aspx.cs" Inherits="TP5_GRUPO_12.form1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucursal.aspx.cs" Inherits="Vistas.AgregarSucursal" %>
 
 <!DOCTYPE html>
 
@@ -307,7 +307,7 @@
                 </tr>
                 <tr class="nuevoEstilo35">
                     <td class="auto-style11">
-                        <asp:Button ID="btnAceptar" runat="server" CssClass="auto-style12" Text="Aceptar" OnClick="btnAceptar_Click" ValidationGroup="Agregar" />
+                        <asp:Button ID="btnAceptar" runat="server" CssClass="auto-style12" Text="Aceptar" ValidationGroup="Agregar" />
                        
                         <asp:Label ID="lblAgregadoExitoso"  CssClass="auto-style14" runat="server"></asp:Label>
                     </td>
