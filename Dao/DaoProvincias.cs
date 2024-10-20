@@ -14,7 +14,7 @@ public class DaoProvincia
     public DataTable ObtenerProvincias()
     {
         string consulta = "SELECT * FROM Provincia";
-        DataTable tabla = ds.ObtenerProvincias("Provincia", consulta);
+        DataTable tabla = ds.ObtenerTabla("Provincia", consulta);
         return tabla;
     }
 }

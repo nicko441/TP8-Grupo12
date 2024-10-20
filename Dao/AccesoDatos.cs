@@ -42,7 +42,7 @@ namespace Dao
             }
         }
 
-        public DataTable ObtenerProvincias(String NombreTabla, String Sql)
+        public DataTable ObtenerTabla(String NombreTabla, String Sql)
         {
             DataSet ds = new DataSet();
             SqlConnection Conexion = ObtenerConexion();

@@ -1,12 +1,123 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario.NICO\\source\\repos\\TP8_Grupo_12\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}|Dao\\Dao.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\dao\\daosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}|Dao\\Dao.csproj|solutionrelative:dao\\daosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2093C4CF-FE70-483E-B65F-3B11BB7F752E}|Vistas\\Vistas.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\vistas\\listadosucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2093C4CF-FE70-483E-B65F-3B11BB7F752E}|Vistas\\Vistas.csproj|solutionrelative:vistas\\listadosucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2093C4CF-FE70-483E-B65F-3B11BB7F752E}|Vistas\\Vistas.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\vistas\\listadosucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2093C4CF-FE70-483E-B65F-3B11BB7F752E}|Vistas\\Vistas.csproj|solutionrelative:vistas\\listadosucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A63266-1BEA-4A0C-9BE3-ED3034EFC575}|Negocio\\Negocio.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\negocio\\negociosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A63266-1BEA-4A0C-9BE3-ED3034EFC575}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}|Dao\\Dao.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\dao\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D651D04-CCB4-42A7-BEAE-A3A2CBC2D726}|Dao\\Dao.csproj|solutionrelative:dao\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6526CC-D405-42DD-9A67-57C07DC01BFC}|Entidades\\Entidades.csproj|d:\\usuario\\utn\\programaci\u00F3n iii\\tp8_grupo_12\\entidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6526CC-D405-42DD-9A67-57C07DC01BFC}|Entidades\\Entidades.csproj|solutionrelative:entidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Entidades\\Sucursal.cs",
+              "RelativeDocumentMoniker": "Entidades\\Sucursal.cs",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Entidades\\Sucursal.cs",
+              "RelativeToolTip": "Entidades\\Sucursal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:20:14.034Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Dao\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Dao\\AccesoDatos.cs",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Dao\\AccesoDatos.cs",
+              "RelativeToolTip": "Dao\\AccesoDatos.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:29:18.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DaoSucursal.cs",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Dao\\DaoSucursal.cs",
+              "RelativeDocumentMoniker": "Dao\\DaoSucursal.cs",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Dao\\DaoSucursal.cs",
+              "RelativeToolTip": "Dao\\DaoSucursal.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:23:12.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListadoSucursales.aspx.cs",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Vistas\\ListadoSucursales.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\ListadoSucursales.aspx.cs",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Vistas\\ListadoSucursales.aspx.cs",
+              "RelativeToolTip": "Vistas\\ListadoSucursales.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:18:33.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NegocioSucursal.cs",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Negocio\\NegocioSucursal.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioSucursal.cs",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Negocio\\NegocioSucursal.cs",
+              "RelativeToolTip": "Negocio\\NegocioSucursal.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:22:49.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListadoSucursales.aspx",
+              "DocumentMoniker": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Vistas\\ListadoSucursales.aspx",
+              "RelativeDocumentMoniker": "Vistas\\ListadoSucursales.aspx",
+              "ToolTip": "D:\\Usuario\\UTN\\Programaci\u00F3n III\\TP8_Grupo_12\\Vistas\\ListadoSucursales.aspx",
+              "RelativeToolTip": "Vistas\\ListadoSucursales.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-20T13:17:12.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

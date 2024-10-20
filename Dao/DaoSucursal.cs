@@ -11,6 +11,7 @@ namespace Dao
 {
     public class DaoSucursal
     {
+        AccesoDatos ds = new AccesoDatos();
 
         private void ArmarParametrosSucursalAgregar(ref SqlCommand Comando, Sucursal suc)
         {
@@ -26,9 +27,12 @@ namespace Dao
 
         }
 
-
-        
-
+        public DataTable ObtenerSucursales()
+        {
+            string consulta = "SELECT * FROM Sucursal";
+            DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
+            return tabla;
+        }
 
     }
 }

@@ -59,8 +59,5 @@ namespace Entidades
             DireccionSucursal= direccionsucursal;
         }
 
-        
-    
-    
     }
 }

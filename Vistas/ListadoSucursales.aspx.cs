@@ -1,4 +1,14 @@
-﻿using System;
+﻿
+
+
+
+
+
+
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,6 +16,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
 using Entidades;
+using System.Data;
 
 namespace Vistas
 {
@@ -13,8 +24,10 @@ namespace Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Sucursal grSucursal = new Sucursal();
-            GrwSucursales.DataSource = grSucursal.ObtenerSucursales();///falta crear el metodo en sucursales.cs en  dentro de la biblioteca entidades.
+            NegocioSucursal negocioSucursal = new NegocioSucursal();
+
+            DataTable Sucursales = negocioSucursal.getSucursales();
+            GrwSucursales.DataSource = Sucursales;
             GrwSucursales.DataBind();
         }
     }
