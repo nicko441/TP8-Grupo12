@@ -25,6 +25,8 @@ namespace Dao
             SqlParametros.Value = suc.getDireccionSucursal();
 
         }
+
+
         
 
 

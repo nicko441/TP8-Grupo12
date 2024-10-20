@@ -59,7 +59,7 @@ namespace Entidades
             DireccionSucursal= direccionsucursal;
         }
 
-        public bool datosAlmacenar();
+        
     
     
     }
