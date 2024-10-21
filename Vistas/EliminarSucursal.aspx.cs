@@ -36,7 +36,7 @@ namespace Vistas
             }
             catch (Exception var1)
             {
-                lbl_mensaje.Text = "Error eliminando la sucrusal";
+                lbl_mensaje.Text = "Error eliminando la sucursal";
                 Console.WriteLine(var1.Message);
             }
         }
