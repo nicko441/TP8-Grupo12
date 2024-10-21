@@ -13,6 +13,7 @@ namespace Vistas
     public partial class AgregarSucursal : System.Web.UI.Page
     {
         NegocioProvincias negProv = new NegocioProvincias();
+        NegocioSucursal negSuc = new NegocioSucursal();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -27,16 +28,10 @@ namespace Vistas
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            Sucursal DatosSucursal = new Sucursal();
             int ddlSeleccion = Convert.ToInt32(ddlProvincias.SelectedValue);
-            DatosSucursal.setNombreSucursal(txtNombreSucu.Text);
-            DatosSucursal.setDescripcionSucursal(txtDescripcionSucu.Text); 
-            DatosSucursal.setDireccionSucursal(txtDireccion.Text);
-            DatosSucursal.setId_ProvinciaSucursal(ddlSeleccion);
-
-            ///Aca se debe crear la funcion en sucursal.cs que pertenece a entidad y que es donde se conecta con la parte 
-            ///de  daosucursal.cs
-            ///tambien falta el label de "exito se guardo "
+            Sucursal s = Sucursal.crearSucursal(txtNombreSucu.Text, txtDescripcionSucu.Text,
+                ddlSeleccion, txtDireccion.Text);
+            this.negSuc.guardarSucursal(s);
 
         }
     }
