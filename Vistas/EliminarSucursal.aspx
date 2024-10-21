@@ -30,7 +30,7 @@
 &nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txt_idsucursalaeliminar" runat="server"></asp:TextBox>
 &nbsp;
-        <asp:Button ID="btn_eliminarsuc" runat="server" CssClass="auto-style1" Text="Eliminar" />
+        <asp:Button ID="btn_eliminarsuc" runat="server" CssClass="auto-style1" Text="Eliminar" OnClick="btn_eliminarsuc_Click" />
         <br />
         <br />
         <asp:Label ID="lbl_mensaje" runat="server" ForeColor="Red"></asp:Label>
