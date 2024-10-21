@@ -11,7 +11,7 @@ namespace Dao
     class AccesoDatos
     {
         String rutaBDSucursales =
-            "Data Source=DESKTOP-S3NJR61;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True";
+            "Data Source=localhost\\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True";
         public AccesoDatos() { }
 
         private SqlConnection ObtenerConexion()

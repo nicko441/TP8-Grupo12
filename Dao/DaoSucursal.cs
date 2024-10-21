@@ -29,14 +29,14 @@ namespace Dao
 
         public DataTable ObtenerSucursales()
         {
-            string consulta = "SELECT Id_Sucursal,NombreSucursal as Nombre,DescripcionSucursal as Descripcion,Id_ProvinciaSucursal as Provincia,DireccionSucursal as Direccion FROM Sucursal";
+            string consulta = "SELECT Id_Sucursal, NombreSucursal AS Nombre, DescripcionSucursal AS Descripcion,DescripcionProvincia AS Provincia, DireccionSucursal AS Direccion FROM Sucursal INNER JOIN Provincia ON Id_ProvinciaSucursal = Id_Provincia";
             DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
             return tabla;
         }
 
         public DataTable ObtenerSucursalPorId(string IdSucursal)
         {
-            string consulta = $"select Id_Sucursal,NombreSucursal as Nombre,DescripcionSucursal as Descripcion,Id_ProvinciaSucursal as Provincia,DireccionSucursal as Direccion from Sucursal where Id_Sucursal = '{IdSucursal}'";
+            string consulta = $"SELECT Id_Sucursal, NombreSucursal AS Nombre, DescripcionSucursal AS Descripcion,DescripcionProvincia AS Provincia, DireccionSucursal AS Direccion FROM Sucursal INNER JOIN Provincia ON Id_ProvinciaSucursal = Id_Provincia where Id_Sucursal = '{IdSucursal}'";
             DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
             return tabla;
         }
