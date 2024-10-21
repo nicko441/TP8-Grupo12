@@ -11,7 +11,7 @@ namespace Dao
     class AccesoDatos
     {
         String rutaBDSucursales =
-            "Data Source=localhost\\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True";
+            "Data Source=DESKTOP-S3NJR61;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True";
         public AccesoDatos() { }
 
         private SqlConnection ObtenerConexion()
@@ -64,6 +64,31 @@ namespace Dao
             FilasCambiadas = cmd.ExecuteNonQuery();
             Conexion.Close();
             return FilasCambiadas;
+        }
+
+        public bool EjecutarConsulta(string consulta, SqlCommand comando)
+        {
+            SqlConnection conexion = null;
+        
+            try
+            {
+                conexion = this.ObtenerConexion();
+                comando.Connection = conexion;
+                comando.CommandText = consulta;
+
+                return comando.ExecuteNonQuery() > 0; 
+            }
+            catch (Exception var1)
+            {
+                throw new Exception("Error al ejecutar la consulta: " + var1.Message);
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
         }
 
     }

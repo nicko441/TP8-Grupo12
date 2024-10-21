@@ -28,10 +28,36 @@ namespace Vistas
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            int ddlSeleccion = Convert.ToInt32(ddlProvincias.SelectedValue);
-            Sucursal s = Sucursal.crearSucursal(txtNombreSucu.Text, txtDescripcionSucu.Text,
-                ddlSeleccion, txtDireccion.Text);
-            this.negSuc.guardarSucursal(s);
+            try
+            {
+                if (ddlProvincias.SelectedValue == null || ddlProvincias.SelectedValue == "")
+                {
+                    lblAgregadoExitoso.Text = "Por favor, seleccione una provincia.";
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(txtNombreSucu.Text))
+                {
+                    lblAgregadoExitoso.Text = "El nombre de la sucursal es obligatorio.";
+                    return;
+                }
+
+                int ddlSeleccion = Convert.ToInt32(ddlProvincias.SelectedValue);
+
+                Sucursal s = Sucursal.crearSucursal(txtNombreSucu.Text, txtDescripcionSucu.Text,
+                    ddlSeleccion, txtDireccion.Text);
+
+                this.negSuc.guardarSucursal(s);
+                lblAgregadoExitoso.Text = "La sucursal ha sido guardada exitosamente.";
+            }
+            catch (FormatException)
+            {
+                lblAgregadoExitoso.Text = "Error: Selección de provincia inválida.";
+            }
+            catch (Exception ex)
+            {
+                lblAgregadoExitoso.Text = "Error: No se pudo guardar la sucursal. " + ex.Message;
+            }
 
         }
     }

@@ -13,7 +13,7 @@ namespace Dao
     {
         AccesoDatos ds = new AccesoDatos();
 
-        private void ArmarParametrosSucursalAgregar(ref SqlCommand Comando, Sucursal suc)
+        private void ArmarParametrosSucursalAgregar(SqlCommand Comando, Sucursal suc)
         {
             SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@NOMBRESUCURSAL", SqlDbType.VarChar);
@@ -50,10 +50,10 @@ namespace Dao
         public bool AgregarSucursal(Sucursal s)
         {
             SqlCommand comando = new SqlCommand();
-            this.ArmarParametrosSucursalAgregar(ref comando, s);
-            string consulta = "INSERT INTO Sucursal (NombreSucrusal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+            this.ArmarParametrosSucursalAgregar(comando, s);
+            string consulta = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
                 "VALUES (@NOMBRESUCURSAL, @DESCRIPCIONSUCURSAL, @ID_PROVINCIASUCURSAL, @DIRECCIONSUCURSAL)";
-            return ds.EjecutarProcedimientoAlmacenado(comando, consulta) > 0;
+            return ds.EjecutarConsulta(consulta, comando);
         }
 
         public bool EliminarSucursal(int id)
@@ -61,7 +61,7 @@ namespace Dao
             SqlCommand comando = new SqlCommand();
             this.ArmarParametrosSucursalEliminar(ref comando, id);
             string consulta = $"DELETE FROM Sucursal WHERE Id_Sucursal = '{id}'";
-            return ds.EjecutarProcedimientoAlmacenado(comando, consulta) > 0;
+            return ds.EjecutarConsulta(consulta, comando);
         }
 
       

@@ -307,7 +307,7 @@
                 </tr>
                 <tr class="nuevoEstilo35">
                     <td class="auto-style11">
-                        <asp:Button ID="btnAceptar" runat="server" CssClass="auto-style12" Text="Aceptar" ValidationGroup="Agregar" />
+                        <asp:Button ID="btnAceptar" runat="server" CssClass="auto-style12" Text="Aceptar" ValidationGroup="Agregar" OnClick="btnAceptar_Click" />
                        
                         <asp:Label ID="lblAgregadoExitoso"  CssClass="auto-style14" runat="server"></asp:Label>
                     </td>
