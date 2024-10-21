@@ -16,6 +16,16 @@ namespace Entidades
 
         public Sucursal() { }
 
+        public static Sucursal crearSucursal(string nom, string des, int id_p, string dir)
+        {
+            Sucursal sucursal = new Sucursal();
+            sucursal.setNombreSucursal(nom);
+            sucursal.setDescripcionSucursal(des);
+            sucursal.setId_ProvinciaSucursal(id_p);
+            sucursal.setDireccionSucursal(dir);
+            return sucursal;
+        }
+
         public int getId_Sucursal()
         {
             return Id_Sucursal;

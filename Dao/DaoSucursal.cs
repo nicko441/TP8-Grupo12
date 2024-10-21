@@ -40,11 +40,28 @@ namespace Dao
             DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
             return tabla;
         }
-        private void ArmarParametrosSucursalEliminar (ref SqlCommand comando, Sucursal suc)
+        private void ArmarParametrosSucursalEliminar (ref SqlCommand comando, int id)
         {
             SqlParameter Parametros = new SqlParameter();
             Parametros = comando.Parameters.Add("IDSUCURSAL", SqlDbType.Int);
-            Parametros.Value = suc.getId_Sucursal();
+            Parametros.Value = id;
+        }
+        
+        public bool AgregarSucursal(Sucursal s)
+        {
+            SqlCommand comando = new SqlCommand();
+            this.ArmarParametrosSucursalAgregar(ref comando, s);
+            string consulta = "INSERT INTO Sucursal (NombreSucrusal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+                "VALUES (@NOMBRESUCURSAL, @DESCRIPCIONSUCURSAL, @ID_PROVINCIASUCURSAL, @DIRECCIONSUCURSAL)";
+            return ds.EjecutarProcedimientoAlmacenado(comando, consulta) > 0;
+        }
+
+        public bool EliminarSucursal(int id)
+        {
+            SqlCommand comando = new SqlCommand();
+            this.ArmarParametrosSucursalEliminar(ref comando, id);
+            string consulta = $"DELETE FROM Sucursal WHERE Id_Sucursal = '{id}'";
+            return ds.EjecutarProcedimientoAlmacenado(comando, consulta) > 0;
         }
 
       
