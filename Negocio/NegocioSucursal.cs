@@ -15,5 +15,14 @@ namespace Negocio
             DaoSucursal dao = new DaoSucursal();
             return dao.ObtenerSucursales();
         }
+
+        public DataTable getSucursalPorId(string IdSucursal)
+        {
+            DaoSucursal dao = new DaoSucursal();
+            return dao.ObtenerSucursalPorId(IdSucursal);
+        }
+
+
+
     }
 }

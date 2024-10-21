@@ -29,10 +29,24 @@ namespace Dao
 
         public DataTable ObtenerSucursales()
         {
-            string consulta = "SELECT * FROM Sucursal";
+            string consulta = "SELECT Id_Sucursal,NombreSucursal as Nombre,DescripcionSucursal as Descripcion,Id_ProvinciaSucursal as Provincia,DireccionSucursal as Direccion FROM Sucursal";
             DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
             return tabla;
         }
 
+        public DataTable ObtenerSucursalPorId(string IdSucursal)
+        {
+            string consulta = $"select Id_Sucursal,NombreSucursal as Nombre,DescripcionSucursal as Descripcion,Id_ProvinciaSucursal as Provincia,DireccionSucursal as Direccion from Sucursal where Id_Sucursal = '{IdSucursal}'";
+            DataTable tabla = ds.ObtenerTabla("Sucursal", consulta);
+            return tabla;
+        }
+        private void ArmarParametrosSucursalEliminar (ref SqlCommand comando, Sucursal suc)
+        {
+            SqlParameter Parametros = new SqlParameter();
+            Parametros = comando.Parameters.Add("IDSUCURSAL", SqlDbType.Int);
+            Parametros.Value = suc.getId_Sucursal();
+        }
+
+      
     }
 }

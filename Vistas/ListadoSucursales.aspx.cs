@@ -30,5 +30,14 @@ namespace Vistas
             GrwSucursales.DataSource = Sucursales;
             GrwSucursales.DataBind();
         }
+
+        protected void BtnFiltrar_Click(object sender, EventArgs e)
+        {
+            string IdSucursal = TxtIDSuc.Text;
+            NegocioSucursal negociosucursal = new NegocioSucursal();
+            DataTable Sucursales = negociosucursal.getSucursalPorId(IdSucursal);
+            GrwSucursales.DataSource= Sucursales;
+            GrwSucursales.DataBind();
+        }
     }
 }

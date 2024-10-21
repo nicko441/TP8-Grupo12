@@ -54,7 +54,7 @@
 &nbsp;
              <asp:TextBox ID="TxtIDSuc" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar" />
+             <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar" OnClick="BtnFiltrar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <asp:Button ID="BtnMostrarTodos" runat="server" Text="MostrarTodos" />
          </p>
